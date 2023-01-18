@@ -1,5 +1,5 @@
-import { faPlus, faXmark } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { BsPlusLg } from 'react-icons/bs';
+import { GrClose } from 'react-icons/gr';
 import { useState } from 'react';
 import { useAddNewTodoMutation } from '../features/todos/todosApiSlice'
 
@@ -19,13 +19,13 @@ const AddTodo = () => {
     }
     return (
         <div className='plus_button' onClick={() => setModal(true)}>
-            <FontAwesomeIcon icon={faPlus} className='plus_icon' />
+            <BsPlusLg className='plus_icon' />
             {
                 modal && (
                     <div className='modal' onClick={e => e.stopPropagation()}>
                         <div className="form_container">
                             <div className="close_icon" onClick={() => setModal(false)}>
-                                <FontAwesomeIcon icon={faXmark} />
+                                <GrClose />
                             </div>
                             <form onSubmit={handleSubmit}>
                                 <label htmlFor="addTodo">Add Todo</label>

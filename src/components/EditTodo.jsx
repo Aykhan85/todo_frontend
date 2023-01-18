@@ -1,11 +1,9 @@
-import { faCheck, faTrash } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useDeleteTodoMutation, useUpdateTodoMutation } from "../features/todos/todosApiSlice";
 import { useState } from 'react';
-
+import { BsCheckLg } from 'react-icons/bs'
+import { FaTrash } from 'react-icons/fa'
 
 const EditTodo = ({ todo }) => {
-    const [checked, setChecked] = useState(todo.completed)
 
     const [updateTodo] = useUpdateTodoMutation();
     const [deleteTodo] = useDeleteTodoMutation()
@@ -25,14 +23,14 @@ const EditTodo = ({ todo }) => {
             <div className='main__content'>
                 <div className="circle" onClick={() => handleCheck()}>{
                     todo.completed ?
-                        <FontAwesomeIcon icon={faCheck} className='check_icon' />
+                        <BsCheckLg className='check_icon' />
                         : ''
                 }
                 </div>
                 <label htmlFor="checkbox" className={todo.completed ? 'active' : 'todo_title'}>{todo.content}</label>
             </div>
             <div className="delete_section" onClick={() => deleteTodo({ id: todo.id })}>
-                <FontAwesomeIcon icon={faTrash} />
+                <FaTrash />
             </div>
         </div>
 
