@@ -1,0 +1,42 @@
+/* //////////////////////// REBOOT CSS ////////////// */
+$primary_color: hsl(240, 31%, 34%);
+$secondary_color: hsl(236, 100%, 97%);
+
+$primary_font: "Merriweather";
+$secondary_font: "Poppins";
+
+$container_width_sm: 93%;
+$container_width_m: 85%;
+$container_width_l: 76%;
+$container_width_xl: 70%;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: linear-gradient(119.36deg, #eef5ff 0%, #f0eeff 100%);
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  max-inline-size: 100%;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}

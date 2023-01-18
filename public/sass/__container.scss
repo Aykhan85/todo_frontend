@@ -1,0 +1,9 @@
+.container {
+  max-inline-size: $container_width_sm;
+  margin-inline: auto;
+  background-color: hsl(0, 0%, 100%);
+  padding-inline-start: 1.5rem;
+  border-radius: 54px;
+  min-block-size: calc(100vh - 2 * 2.75rem);
+  margin-block: 2.75rem;
+}

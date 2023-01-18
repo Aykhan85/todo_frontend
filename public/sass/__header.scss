@@ -1,0 +1,11 @@
+/* /////////////////// Header CSS //////////////////// */
+.header {
+  margin-block-end: 3.125rem;
+}
+.title {
+  color: $primary_color;
+  font-family: "Merriweather";
+  font-weight: 900;
+  font-size: clamp(2.25rem, 6vw, 2.875rem);
+  padding-block-start: 3.125rem;
+}

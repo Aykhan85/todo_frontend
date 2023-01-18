@@ -1,0 +1,38 @@
+.todo_title {
+  font-family: "Poppins";
+  font-size: clamp(1.25rem, 3.33vw, 1.875rem);
+  font-weight: 500;
+}
+
+.active {
+  @extend .todo_title;
+  text-decoration: line-through;
+}
+
+.checkbox {
+  appearance: none;
+}
+
+.circle {
+  border: 2px solid $primary_color;
+  width: 39px;
+  height: 39px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  &__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    inline-size: 50%;
+  }
+
+  &__content {
+    display: flex;
+    gap: 0.9375rem;
+  }
+}

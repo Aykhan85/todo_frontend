@@ -1,0 +1,42 @@
+.modal {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .form_container {
+    width: 500px;
+    background-color: white;
+    height: 200px;
+    border-radius: 20px;
+    position: relative;
+    .close_icon {
+      position: absolute;
+      right: 20px;
+      top: 10px;
+    }
+    form {
+      display: flex;
+      block-size: 100%;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.9375rem;
+      align-items: center;
+      label {
+        color: $primary_color;
+        font-size: 0.9375rem;
+      }
+      input {
+        padding-inline: 0.625rem;
+        width: 95%;
+        outline: none;
+        height: 30px;
+        border: 2px solid $primary_color;
+        border-radius: 100vmax;
+      }
+    }
+  }
+}

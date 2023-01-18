@@ -1,0 +1,18 @@
+.plus_button {
+  display: inline-block;
+  background-color: $primary_color;
+  padding-block: 0.625rem;
+  padding-inline: 1.75rem;
+  border-radius: 17px;
+  inset-block-end: 0;
+  inset-inline-end: 3.625rem;
+}
+
+.add_button {
+  padding: 15px 30px;
+  background-color: $primary_color;
+  width: 95%;
+  color: white;
+  border-radius: 100vmax;
+  font-size: 1.0625rem;
+}
